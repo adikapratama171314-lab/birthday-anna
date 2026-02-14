@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Happy Birthday — Anna Azzahra</title>
+  <title>Ucapan — Anna Azzahra</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +16,10 @@
   <canvas id="fx" class="fx" aria-hidden="true"></canvas>
 
   <header class="hud">
-    <div class="brand">
+    <a class="brand link" href="./index.html">
       <span class="dot"></span>
-      <span>birthday://anna</span>
-    </div>
+      <span>back://home</span>
+    </a>
 
     <div class="hud-right">
       <button class="btn btn-ghost" id="musicBtn" type="button">
@@ -29,22 +29,28 @@
     </div>
   </header>
 
-  <main class="center">
-    <div class="tag">POV: diksszyz13 made a birthday page</div>
-
-    <h1 class="title">
-      <span class="small">Happy Birthday</span>
-      <span class="big">Anna Azzahra</span>
-    </h1>
-
-    <div class="line" aria-hidden="true"></div>
-
-    <div class="actions">
-      <a class="btn btn-primary" href="./message.html">Buka ucapan →</a>
-      <button class="btn btn-soft" id="boostBtn" type="button">Boost efek ✨</button>
+  <main class="sheet">
+    <div class="sheet-head">
+      <div class="sheet-title">message.txt</div>
+      <div class="sheet-sub">copy enabled</div>
     </div>
 
-    <p class="hint" id="musicHint">Klik <b>Play music</b> untuk mulai.</p>
+    <pre class="msg" id="copyArea">SELAMAT ULANG TAHUN ANNA AZZAHRA
+SEMOGA PANJANG UMUR  SEMOGA SELALU SEHAT, BAHAGIA DUNIA AKHIRAT, SEMOGA SUKSES YAA
+
+ENJOY YOUR LIFE
+
+14 - Feb - 2010
+
+
+by  © diksszyz13</pre>
+
+    <div class="sheet-actions">
+      <button class="btn btn-primary" id="copyBtn" type="button">Copy ucapan</button>
+      <a class="btn btn-soft" href="./index.html">Lihat animasi</a>
+    </div>
+
+    <p class="mini" id="musicHint">Musik akan lanjut kalau sudah kamu play sekali.</p>
   </main>
 
   <audio id="bgMusic" preload="auto" loop playsinline>
